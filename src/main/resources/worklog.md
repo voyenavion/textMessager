@@ -1,19 +1,10 @@
 #Manna SMS Project
 
-sid:
-AC7228b63ff3596902315d2966ddb3d1ad
-pass:
-1f3837b4f3c4c8c4c9f5fb376d448fb7
+
 
 twilio number
-215-703-9793
 
-postman password:
-Glqh4fWfDZ5e30
-
-(https://api.twilio.com/2010-04-01/Accounts/AC7228b63ff3596902315d2966ddb3d1ad/Messages)[hi]
-
-H2 Console url: [http://localhost:8080/h2-console] (note password is blank)
+H2 Console url: http://localhost:8080/h2-console (note password is blank)
 
 mvn spring-boot:run/ctrl+c
 ngrok http 8080/ctrl+c
