@@ -6,7 +6,7 @@
 	<artifactId>text.messager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>cool.man</name>
+	<name>text.messager</name>
 	<url>http://maven.apache.org</url>
 
 	<parent>
@@ -48,7 +48,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -60,21 +60,21 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
-		
+
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.5.5</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.twilio.sdk</groupId>
 			<artifactId>twilio</artifactId>
 			<version>7.17.8</version>
 		</dependency>
-		
+
 		<dependency>
   <groupId>com.twilio.sdk</groupId>
   <artifactId>twilio-java-sdk</artifactId>
@@ -94,6 +94,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-		
+
 	</dependencies>
 </project>
