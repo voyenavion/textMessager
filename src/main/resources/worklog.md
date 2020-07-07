@@ -30,3 +30,11 @@ I made the switch using the annotation @RequestMapping(value = “incoming”, p
 String responseMethod(boolean exists, String phoneNumber, String incomingMessage) which will return the appropriate response message.
 	My thinking has also changed in that it doesn’t make sense to me to have a subscribed boolean column. I think to respect people’s privacy it is just better to add or delete the contact in the db as the mechanism of opting in or out. 
 	I also added a constant class for the response messages. 
+
+4/18/20
+Got an instance of amazon ec2 about 2 months ago, I think it's free for the first 6 months so I only have 4 months or
+ so free left. Generated private and public key pair so I could communicate with the instance via ssh. There is a
+  good console dashboard, you can get the instance running from there. I secure-copied the app jar to the instance
+   and got it running. When you need to connect with the instance you can just right click on the instance line in
+    the console and select 'connect' and it will give you the ssh command that you need to use. To start the app as a
+     spring boot application use: 'java -jar text.messager-0.0.1-SNAPSHOT.jar'. 
