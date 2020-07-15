@@ -18,8 +18,8 @@ public class Contact {
 
     protected Contact() {}
 
-    public Contact(String phoneNumber) {
-        this.phonenumber = phoneNumber;
+    public Contact(String phonenumber) {
+        this.phonenumber = phonenumber;
     }
 
     public Long getId() {
@@ -30,12 +30,12 @@ public class Contact {
 		this.id = id;
 	}
 
-	public String getPhoneNumber() {
+	public String getPhonenumber() {
 		return phonenumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phonenumber = phoneNumber;
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
 	}
 
 	public boolean isSubscribed() {

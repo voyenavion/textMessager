@@ -20,6 +20,9 @@ public interface ContactRepository extends CrudRepository<Contact, Long> {
 	@Modifying(clearAutomatically=true)
 	@Query("update Contact c set c.subscribed = ?1 where c.phonenumber = ?2")
 	int setSubscribedForContact(boolean subscribed, String phonenumber);
+
 	boolean existsByPhonenumber(String phonenumber);
-	
+
+	List<Contact> findByPhonenumber(String phonenumber);
+
 }
