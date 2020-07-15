@@ -41,7 +41,7 @@ public class Outgoing {
               
               Iterable<Contact> subscribers = repository.findBySubscribed(false);
               for (Contact contact : subscribers) {
-            	  message = Message.creator(new PhoneNumber(contact.getPhoneNumber()),
+            	  message = Message.creator(new PhoneNumber(contact.getPhonenumber()),
         				  new PhoneNumber("+12157039793" + 
         				  		""), text).create();
               }

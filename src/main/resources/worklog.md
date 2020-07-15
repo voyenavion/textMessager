@@ -38,3 +38,31 @@ Got an instance of amazon ec2 about 2 months ago, I think it's free for the firs
    and got it running. When you need to connect with the instance you can just right click on the instance line in
     the console and select 'connect' and it will give you the ssh command that you need to use. To start the app as a
      spring boot application use: 'java -jar text.messager-0.0.1-SNAPSHOT.jar'. 
+
+7/7/20
+Connected my home machine to my aws ec2 instance. Had to generate a new key
+ pair, download and move the .pem file into home machine ssh folder, then copy
+  the public key from the .pem into the "authorized keys" file in the ssh
+   folder on the ec2 instance. used the following command to get the public
+    key from .pem: ssh-keygen -y -f ./amazonEc2HomeMachineKeyPair.pem
+   
+   cool things I learned: "man ssh" will give you the ssh manual and
+    "/ \<searchString>" will search it for your string. n to go to next
+    , shift+n to go back. To search all man pages at once use "man -K \<string>
+    ". 0.0.0.0 in the aws security settings means any ip address. curl
+     ifconfig.me will fetch your public ip.
+     
+7/8/20
+Made an aws rds db instance. I think I gave it the same security group as my
+ ec2 instance, launch-wizard-1. I made sure to make the db instance public so
+  that my ec2 instance can connect to it.
+  had to update my
+  os to high sierra in order
+  to brew install gradle. I should make an effor to brew install everything I
+   could possibly need before they stop supporting high sierra (the jerks
+   , no more patreon for them!)
+   apparently there
+   is a gradle command to convert a
+   maven project to a gradle project. So next time I will be converting my
+    project to gradle, setting up the db (if I need to), and starting the
+     learning process of connecting my project to an aws db. 
