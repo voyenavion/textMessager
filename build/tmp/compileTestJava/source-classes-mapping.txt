@@ -1,2 +1,0 @@
-brave/wave/text/messager/IncomingTextHandlerTest.java
- brave.wave.text.messager.IncomingTextHandlerTest
